@@ -1,5 +1,5 @@
 # fsr-reader
-A Force Sensor Resistor written in C# (this was used for a school project)
+A Force Sensor Resistor reader written in C# (this was used for a school project)
 
 ## Installation
 
