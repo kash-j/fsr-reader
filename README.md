@@ -3,7 +3,11 @@ A Force Sensor Resistor written in C# (this was used for a school project)
 
 ## Installation
 
-Build the project to a DLL file and import it to your C# project
+You will need an Arduino to run this code, the Arduino file is in this repo listed as `pressuresensor.ino`.
+
+- Change (if needed) the pins in the `pressuresensor.ino` file
+- Change (if needed) the minimum pressure in the `pressuresensor.ino` file (NOTE: You can also change it to 0 and change the threshold in your C# project)
+- Build the project "SensorEvents" and add the "SensorEvents.dll" to your C# Project
 
 ## Usage
 Add for example a Controller class as a listener with `SensorManager.AddListener`, example class:
@@ -43,6 +47,8 @@ public class Controller : SensorListener
     }
 }
 ```
+
+NOTE: The `ForceSensorApplication` also has a test class inside of it.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
